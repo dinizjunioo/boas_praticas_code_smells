@@ -1,0 +1,1 @@
+# boas_praticas_code_smells
