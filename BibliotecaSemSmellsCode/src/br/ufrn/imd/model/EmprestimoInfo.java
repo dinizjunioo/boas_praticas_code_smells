@@ -1,25 +1,26 @@
 package br.ufrn.imd.model;
 
-class EmprestimoInfo {
-    private String borrower;
-    private String date;
-    private int durationDays;
+public class EmprestimoInfo {
 
-    public EmprestimoInfo(String borrower, String date, int durationDays) {
-        this.borrower = borrower;
-        this.date = date;
-        this.durationDays = durationDays;
+    private String emprestadoPara;
+    private String dataEmprestimo;
+    private int duracaoDias;
+
+    public EmprestimoInfo(String emprestadoPara, String dataEmprestimo, int duracaoDias) {
+        this.emprestadoPara = emprestadoPara;
+        this.dataEmprestimo = dataEmprestimo;
+        this.duracaoDias = duracaoDias;
     }
 
-    public String getBorrower() {
-        return borrower;
+    public String getEmprestadoPara() {
+        return emprestadoPara;
     }
 
-    public String getDate() {
-        return date;
+    public String getDataEmprestimo() {
+        return dataEmprestimo;
     }
 
-    public int getDurationDays() {
-        return durationDays;
+    public int getDuracaoDias() {
+        return duracaoDias;
     }
 }

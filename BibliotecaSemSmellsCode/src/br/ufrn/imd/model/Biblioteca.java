@@ -9,23 +9,23 @@ public class Biblioteca {
 	
 	private List<Livro> livros = new ArrayList<>();
 
-	public void addBook(Livro livro) {
+	public void addLivro(Livro livro) {
 		livros.add(livro);
 	}
 
-	public Optional<Livro> findAvailableBookByTitle(String titulo) {
-		return livros.stream()
-             .filter(b -> b.verificarTitulo(titulo) && !b.isDisponivel())
-             .findFirst();
-	}
+	public Optional<Livro> buscarLivroDisponivelPorTitulo(String titulo) {
+        return livros.stream()
+                .filter(l -> l.verificarTitulo(titulo) && l.isDisponivel())
+                .findFirst();
+    }
 
-	public Optional<Livro> findBookByTitle(String title) {
-		return livros.stream()
-             .filter(b -> b.verificarTitulo(title))
-             .findFirst();
-	}
+    public Optional<Livro> buscarLivroPorTitulo(String titulo) {
+        return livros.stream()
+                .filter(l -> l.verificarTitulo(titulo))
+                .findFirst();
+    }
 
-	public List<Livro> getAllBooks() {
-		return livros;
-	}
+    public List<Livro> obterTodosOsLivros() {
+        return livros;
+    }
 }
