@@ -1,4 +1,4 @@
-package br.ufrn.dimap.view;
+package br.ufrn.imd.view;
 import br.ufrn.imd.model.Livro;
 import br.ufrn.imd.service.LivroService;
 

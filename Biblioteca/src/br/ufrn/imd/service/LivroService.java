@@ -1,7 +1,7 @@
 package br.ufrn.imd.service;
 
 import br.ufrn.imd.model.Livro;
-import br.ufrn.dimap.view.SistemaBiblioteca;
+import br.ufrn.imd.view.SistemaBiblioteca;
 
 public class LivroService {
 	// 🚨 Função longa + lista longa de parâmetros + obsessão por primitivos
